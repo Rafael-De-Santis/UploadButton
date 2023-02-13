@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Button</title>
+    <link href="/dist/output.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body class="bg-yellow-600 font-mono">
+<div class="container">
+    <input type="file" class="hidden"  id="fileBtn" multiple/>
+    <label for="fileBtn" class="bg-yellow-500 flex font-semibold text-sm justify-center w-60 m-auto p-5 rounded-md cursor-pointer">
+        <i class="fa fa-upload" aria-hidden="true"></i>
+        &nbsp; Choose Files to Upload
+    </label>
+    <div id="filesChosen" class="text-xs font-light flex justify-center m-auto">No Files Chosen</div>
+        <ul id="fileList"></ul>
+    
+</div>
+
+<script src="app.js"></script>    
+</body>
+</html>
